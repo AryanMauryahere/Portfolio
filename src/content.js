@@ -10,7 +10,7 @@ export const portfolio = {
   headline: ['Engineer', 'in the', 'making.'],
   aboutHeading: 'A curious mind. A world to build.',
   about: "I'm Aryan Maurya, a Computer Engineering student and developer based in India. I'm interested in building thoughtful digital experiences and solving problems through technology.",
-  aboutDetail: 'I work with HTML, CSS and JavaScript, and I’m learning Python fundamentals through loops. This is a space for my learning, ideas and the projects I’ll share along the way.',
+  aboutDetail: 'I enjoy working across web development, interactive interfaces, and cybersecurity, with a focus on writing practical solutions and continuously improving how I build. Most of what I learn comes from turning ideas into real projects and exploring what I can create with them.',
   facts: [
     { value: '02', label: 'Year of study' },
     { value: 'Web', label: 'Development' },
