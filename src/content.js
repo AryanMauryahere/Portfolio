@@ -9,7 +9,7 @@ export const portfolio = {
   heroLabel: 'Second-year Computer Engineering student at Atharva College of Engineering',
   headline: ['Engineer', 'in the', 'making.'],
   aboutHeading: 'A curious mind. A world to build.',
-  about: "I'm Aryan Maurya, a second-year Computer Engineering student at Atharva College of Engineering, interested in web development and cybersecurity.",
+  about: "I'm Aryan Maurya, a Computer Engineering student and developer based in India. I'm interested in building thoughtful digital experiences and solving problems through technology.",
   aboutDetail: 'I work with HTML, CSS and JavaScript, and I’m learning Python fundamentals through loops. This is a space for my learning, ideas and the projects I’ll share along the way.',
   facts: [
     { value: '02', label: 'Year of study' },
