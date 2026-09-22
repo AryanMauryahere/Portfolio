@@ -1,0 +1,5 @@
+html, body, #app { margin:0; width:100%; min-height:100%; background:#05070a; color:#dfe7e0; }
+body:has(.shader-frame) { overflow:hidden; }
+.shader-frame { width:100%; height:100vh; height:100svh; }
+.shader-frame > .landing-page-frame { width:100%; height:100%; }
+noscript a { color:inherit; }

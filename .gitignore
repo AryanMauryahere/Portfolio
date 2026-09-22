@@ -1,0 +1,9 @@
+.superdesign/tmp/
+node_modules/
+.env
+.env.*
+!.env.example
+dist/
+*.local
+.references/threeui/package/
+.references/threeui/*.tgz

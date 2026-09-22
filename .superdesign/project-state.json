@@ -1,0 +1,15 @@
+{
+  "projectId": "9f03bbe7-1646-4d05-a1bc-080e6f9b4257",
+  "activeDraftId": "34765ed4-a762-4de9-b4ec-410e88c0c54d",
+  "currentVersion": 2,
+  "canvasUrl": "https://superdesign.dev/teams/e02f99b3-b4f1-4940-b98c-4b76fb06706e/projects/9f03bbe7-1646-4d05-a1bc-080e6f9b4257",
+  "previewUrl": "https://p.superdesign.dev/draft/34765ed4-a762-4de9-b4ec-410e88c0c54d",
+  "status": "implemented-local",
+  "productionImplemented": true,
+  "sitesAvailable": false,
+  "contextFiles": [
+    ".superdesign/design-system.md",
+    ".superdesign/profile.md"
+  ],
+  "note": "User approved implementation. Website source is index.html plus src/; content edits in src/content.js. Original v2 design remains on Superdesign. Sites unavailable, no hosting registration or deployment performed."
+}

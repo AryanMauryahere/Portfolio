@@ -1,0 +1,227 @@
+<!DOCTYPE html><html lang="en" class="scroll-smooth"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aryan Maurya — Portfolio</title>
+  <meta name="description" content="Aryan Maurya, a second-year Computer Engineering student at Atharva College of Engineering.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap" rel="stylesheet">
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <style>
+    :root {
+      --color-orange: #ff5100;
+      --color-ink: #11110f;
+      --color-paper: #f2f0e9;
+      --color-muted: #595951;
+    }
+    body {
+      margin: 0;
+      background-color: var(--color-orange);
+      color: var(--color-ink);
+      font-family: 'Inter', sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .font-display {
+      font-family: 'Bodoni Moda', serif;
+    }
+    .orbital-container {
+      perspective: 1000px;
+      transform-style: preserve-3d;
+      animation: gentle-float 6s ease-in-out infinite alternate;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .orbital-container {
+        animation: none;
+      }
+    }
+    @keyframes gentle-float {
+      0% { transform: translateY(0) rotateX(5deg) rotateY(-5deg); }
+      100% { transform: translateY(-20px) rotateX(15deg) rotateY(10deg); }
+    }
+    /* Gradient simulating chrome reflection on the orbital shape */
+    .chrome-texture {
+      background: conic-gradient(from 180deg at 50% 50%, #eee 0deg, #999 45deg, #fff 90deg, #aaa 135deg, #f0f0f0 180deg, #888 225deg, #ddd 270deg, #bbb 315deg, #eee 360deg);
+      box-shadow: inset 0 0 40px rgba(0,0,0,0.5), 0 20px 40px rgba(0,0,0,0.3);
+    }
+    html { scroll-padding-top: 96px; }
+    a { min-height: 44px; }
+    header a { display: inline-flex; align-items: center; }
+    a:focus-visible { outline: 2px solid currentColor; outline-offset: 6px; }
+    @media (max-width: 600px) {
+      header { flex-wrap: wrap; gap: 8px; padding-top: 12px !important; padding-bottom: 12px !important; }
+      header nav { width: 100%; justify-content: space-between; gap: 12px !important; }
+      html { scroll-padding-top: 120px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html.scroll-smooth { scroll-behavior: auto !important; }
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div id="top" class="min-h-screen flex flex-col" data-sd-id="1">
+    
+    <!-- Header -->
+    <header class="fixed top-0 w-full z-50 flex items-center justify-between px-6 py-6 md:px-10 text-[#11110f] bg-[#ff5100]" data-sd-id="2">
+      <a id="home-link" href="#top" class="text-sm uppercase tracking-widest font-medium" data-sd-id="3">Aryan Maurya</a>
+      <div class="hidden md:block text-xs uppercase tracking-widest opacity-80" data-sd-id="4">
+        Portfolio — 2026
+      </div>
+      <nav class="flex gap-6 text-sm uppercase tracking-widest font-medium" data-sd-id="5">
+        <a id="about-link" href="#about" class="hover:underline underline-offset-4" data-sd-id="6">About</a>
+        <a id="projects-link" href="#projects" class="hover:underline underline-offset-4" data-sd-id="7">Work</a>
+        <a id="contact-link" href="#contact" class="hover:underline underline-offset-4" data-sd-id="8">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative w-full h-[100svh] bg-[#ff5100] flex items-center justify-center overflow-hidden" data-sd-id="9">
+      <div class="absolute inset-0 flex items-center justify-center opacity-80 mix-blend-multiply pointer-events-none" data-sd-id="10">
+        <div class="orbital-container relative w-[300px] h-[300px] md:w-[500px] md:h-[500px] md:translate-x-1/4 rounded-full chrome-texture flex items-center justify-center" data-sd-id="11">
+            <div class="absolute w-[120%] h-[120%] rounded-full border-[10px] border-[#ff5100]/40 border-t-white/60 -rotate-45" data-sd-id="12"></div>
+            <div class="absolute w-[80%] h-[80%] rounded-full border-[6px] border-[#ff5100]/20 border-b-white/80 rotate-12" data-sd-id="13"></div>
+        </div>
+      </div>
+      
+      <div class="relative z-10 w-full px-6 md:px-10 max-w-7xl mx-auto flex flex-col justify-end h-full pb-20 md:pb-32" data-sd-id="14">
+        <div class="mb-8 md:mb-12 text-xs md:text-sm uppercase tracking-widest font-medium max-w-xs md:max-w-sm border-l border-[#11110f]/20 pl-4" data-sd-id="15">
+          Second-year Computer Engineering Student at Atharva College of Engineering
+        </div>
+        <h1 class="font-display font-medium text-[12vw] leading-[0.85] tracking-tighter uppercase" data-sd-id="16">
+          Engineer <br>
+          <span class="pl-[10vw]" data-sd-id="17">In The</span> <br>
+          <span class="pl-[20vw]" data-sd-id="18">Making</span>
+        </h1>
+      </div>
+      
+      <a id="scroll-about-link" href="#about" class="absolute bottom-8 left-6 md:left-10 text-xs uppercase tracking-widest flex items-center gap-2 hover:opacity-70 transition-opacity" data-sd-id="19">
+        Scroll <iconify-icon icon="lucide:arrow-down"></iconify-icon>
+      </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="w-full bg-[#f2f0e9] py-24 md:py-40 px-6 md:px-10" data-sd-id="20">
+      <div class="max-w-7xl mx-auto" data-sd-id="21">
+        <div class="flex items-center gap-4 text-xs uppercase tracking-widest mb-16 md:mb-24 text-[#595951]" data-sd-id="22">
+          <span data-sd-id="23">[01]</span>
+          <h2 class="font-medium" data-sd-id="24">A little about me.</h2>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8 mb-32" data-sd-id="25">
+          <div class="md:col-span-8" data-sd-id="26">
+            <p class="font-display text-3xl md:text-5xl lg:text-6xl leading-[1.3] text-[#11110f]" data-sd-id="27">
+              I'm Aryan Maurya, a second-year Computer Engineering student at Atharva College of Engineering, interested in web development and cybersecurity.
+            </p>
+          </div>
+          <div class="md:col-span-4 md:col-start-9 md:border-l border-[#11110f]/20 md:pl-8 text-sm text-[#595951] flex flex-col gap-6" data-sd-id="28">
+             <div data-sd-id="29">
+               <div class="text-xs uppercase tracking-widest mb-1" data-sd-id="30">College</div>
+               <div class="text-[#11110f]" data-sd-id="31">Atharva College of Engineering</div>
+             </div>
+             <div data-sd-id="32">
+               <div class="text-xs uppercase tracking-widest mb-1" data-sd-id="33">Branch</div>
+               <div class="text-[#11110f]" data-sd-id="34">Computer Engineering</div>
+             </div>
+             <div data-sd-id="35">
+               <div class="text-xs uppercase tracking-widest mb-1" data-sd-id="36">Year</div>
+               <div class="text-[#11110f]" data-sd-id="37">Second Year</div>
+             </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col border-t border-[#11110f]/20" data-sd-id="38">
+          <!-- Row 1 -->
+          <div class="flex flex-col md:flex-row py-8 border-b border-[#11110f]/20 gap-4 md:gap-12" data-sd-id="39">
+            <div class="w-full md:w-1/3 text-xs uppercase tracking-widest text-[#595951]" data-sd-id="40">
+              Build With
+            </div>
+            <div class="w-full md:w-2/3 text-lg md:text-xl text-[#11110f]" data-sd-id="41">
+              HTML / CSS / JavaScript
+            </div>
+          </div>
+          <!-- Row 2 -->
+          <div class="flex flex-col md:flex-row py-8 border-b border-[#11110f]/20 gap-4 md:gap-12" data-sd-id="42">
+            <div class="w-full md:w-1/3 text-xs uppercase tracking-widest text-[#595951]" data-sd-id="43">
+              Learning
+            </div>
+            <div class="w-full md:w-2/3 text-lg md:text-xl text-[#11110f]" data-sd-id="44">
+              Python fundamentals <span class="text-[#595951]" data-sd-id="45">(through loops)</span>
+            </div>
+          </div>
+          <!-- Row 3 -->
+          <div class="flex flex-col md:flex-row py-8 border-b border-[#11110f]/20 gap-4 md:gap-12" data-sd-id="46">
+            <div class="w-full md:w-1/3 text-xs uppercase tracking-widest text-[#595951]" data-sd-id="47">
+              Exploring
+            </div>
+            <div class="w-full md:w-2/3 text-lg md:text-xl text-[#11110f]" data-sd-id="48">
+              Web development / Cybersecurity
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="w-full bg-[#11110f] text-[#f2f0e9] py-24 md:py-40 px-6 md:px-10" data-sd-id="49">
+      <div class="max-w-7xl mx-auto" data-sd-id="50">
+        <div class="flex items-center gap-4 text-xs uppercase tracking-widest mb-16 md:mb-24 text-[#f2f0e9]/60" data-sd-id="51">
+          <span data-sd-id="52">[02]</span>
+          <h2 class="font-medium" data-sd-id="53">Work, in progress.</h2>
+        </div>
+
+        <div class="flex flex-col items-start gap-12 relative" data-sd-id="54">
+           <!-- Minimal abstract linework -->
+           <div class="absolute top-0 right-0 w-32 h-32 border-r border-t border-[#f2f0e9]/20 hidden md:block" data-sd-id="55"></div>
+           <div class="absolute top-16 right-16 w-16 h-16 border-r border-t border-[#f2f0e9]/10 hidden md:block" data-sd-id="56"></div>
+
+           <p class="font-display text-4xl md:text-6xl lg:text-7xl leading-tight max-w-4xl" data-sd-id="57">
+             I'll share my projects here as this portfolio grows.
+           </p>
+           <p class="text-lg md:text-xl text-[#f2f0e9]/80 max-w-xl" data-sd-id="58">
+             For now, you can explore my GitHub profile.
+           </p>
+           <a href="https://github.com/AryanMauryahere" target="_blank" rel="noopener noreferrer" id="github-link-projects" class="group flex items-center gap-4 mt-8" data-sd-id="59">
+             <span class="text-sm uppercase tracking-widest border-b border-[#f2f0e9] pb-1 group-hover:text-[#ff5100] group-hover:border-[#ff5100] transition-colors" data-sd-id="60">View GitHub Profile</span>
+             <iconify-icon icon="lucide:arrow-up-right" class="text-xl group-hover:text-[#ff5100] group-hover:translate-x-1 group-hover:-translate-y-1 transition-all"></iconify-icon>
+           </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Footer -->
+    <section id="contact" class="w-full bg-[#ff5100] py-24 md:py-40 px-6 md:px-10 flex flex-col justify-between" data-sd-id="61">
+      <div class="max-w-7xl mx-auto w-full flex-grow" data-sd-id="62">
+        <div class="flex items-center gap-4 text-xs uppercase tracking-widest mb-16 text-[#11110f]/80" data-sd-id="63">
+          <span data-sd-id="64">[03]</span>
+          <h2 class="font-medium" data-sd-id="65">Let's connect.</h2>
+        </div>
+        
+        <div class="flex flex-col md:flex-row justify-between items-start gap-16 md:gap-8" data-sd-id="66">
+          <div data-sd-id="67">
+             <a href="https://www.linkedin.com/in/aryan-maurya-96999734b" target="_blank" rel="noopener noreferrer" id="linkedin-link-footer" class="block font-display text-5xl md:text-7xl lg:text-8xl hover:opacity-70 transition-opacity mb-4" data-sd-id="68">
+               LinkedIn
+             </a>
+             <a href="https://github.com/AryanMauryahere" target="_blank" rel="noopener noreferrer" id="github-link-footer" class="block font-display text-5xl md:text-7xl lg:text-8xl hover:opacity-70 transition-opacity" data-sd-id="69">
+               GitHub
+             </a>
+          </div>
+          <div class="md:mt-4" data-sd-id="70">
+             <iconify-icon icon="lucide:arrow-down-right" class="text-5xl md:text-8xl opacity-20"></iconify-icon>
+          </div>
+        </div>
+      </div>
+      
+      <div class="max-w-7xl mx-auto w-full mt-24 md:mt-32 pt-8 border-t border-[#11110f]/20 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-xs uppercase tracking-widest" data-sd-id="71">
+        <div data-sd-id="72">
+          © 2026 Aryan Maurya
+        </div>
+        <div class="text-[#11110f]/60" data-sd-id="73">
+          Computer Engineering Student
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+</body></html>

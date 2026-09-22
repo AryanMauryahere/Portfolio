@@ -1,0 +1,29 @@
+{
+  "name": "aryan-maurya-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "prepare:scene": "node scripts/prepare-kage.mjs",
+    "predev": "npm run prepare:scene",
+    "prebuild": "npm run prepare:scene",
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "check": "node --check src/content.js && node --check src/personalize-kage.js && npm run prepare:scene && node scripts/check-kage.mjs"
+  },
+  "dependencies": {
+    "@designcodeio/threeui": "1.2.0",
+    "@fontsource/bodoni-moda": "5.3.0",
+    "@fontsource/inter": "5.3.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "three": "0.186.0"
+  },
+  "devDependencies": {
+    "vite": "8.3.0"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}
