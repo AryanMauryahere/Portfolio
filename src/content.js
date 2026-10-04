@@ -9,8 +9,8 @@ export const portfolio = {
   heroLabel: 'Second-year Computer Engineering student at Atharva College of Engineering',
   headline: ['Engineer', 'in the', 'making.'],
   aboutHeading: 'A curious mind. A world to build.',
-  about: "I'm Aryan Maurya, a Computer Engineering student and developer based in India. I'm interested in building thoughtful digital experiences and solving problems through technology.",
-  aboutDetail: 'I enjoy working across web development, interactive interfaces, and cybersecurity, with a focus on writing practical solutions and continuously improving how I build. Most of what I learn comes from turning ideas into real projects and exploring what I can create with them.',
+  about: "I'm Aryan Maurya, a second-year Computer Engineering student at Atharva College of Engineering, interested in web development and cybersecurity.",
+  aboutDetail: 'I work with HTML, CSS and JavaScript, and I’m learning Python fundamentals through loops. This is a space for my learning, ideas and the projects I’ll share along the way.',
   facts: [
     { value: '02', label: 'Year of study' },
     { value: 'Web', label: 'Development' },
@@ -34,7 +34,17 @@ export const portfolio = {
   projectsHeading: 'Selected work.',
   emptyProjectsHeading: 'Work, in progress.',
   emptyProjectsMessage: 'I’ll share my projects here as this portfolio grows. For now, find me on GitHub and follow along.',
-  projects: [],
+  projects: [
+  {
+    title: 'My project title',
+    description: 'An interactive, game-style portfolio built with HTML, CSS and JavaScript. Visitors scroll through "levels" (About, Skills, Education, Personal Details, Contact) while an animated pixel-art character runs along the page, turning a traditional resume into a playable experience.',
+    stack: ['HTML', 'CSS', 'JavaScript'],
+    image: '/projects/SS-of-portfolio.png',
+    imageAlt: 'A screenshot of my project homepage',
+    liveUrl: 'https://aryanmauryahere.github.io/Portfolio_website/',
+    githubUrl: 'https://github.com/AryanMauryahere/Portfolio_website',
+  },
+  ],
   contactMessage: 'Interested in web development, cybersecurity or learning together? Find me on LinkedIn, or explore my GitHub profile below.',
   links: {
     github: 'https://github.com/AryanMauryahere',
