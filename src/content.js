@@ -39,7 +39,7 @@ export const portfolio = {
     title: 'My project title',
     description: 'An interactive, game-style portfolio built with HTML, CSS and JavaScript. Visitors scroll through "levels" (About, Skills, Education, Personal Details, Contact) while an animated pixel-art character runs along the page, turning a traditional resume into a playable experience.',
     stack: ['HTML', 'CSS', 'JavaScript'],
-    image: '/projects/SS-of-portfolio.png',
+    image: '/projects/SS-port.png',
     imageAlt: 'A screenshot of my project homepage',
     liveUrl: 'https://aryanmauryahere.github.io/Portfolio_website/',
     githubUrl: 'https://github.com/AryanMauryahere/Portfolio_website',
