@@ -36,13 +36,22 @@ export const portfolio = {
   emptyProjectsMessage: 'I’ll share my projects here as this portfolio grows. For now, find me on GitHub and follow along.',
   projects: [
   {
-    title: 'My project title',
+    title: 'Portfolio Website',
     description: 'An interactive, game-style portfolio built with HTML, CSS and JavaScript. Visitors scroll through "levels" (About, Skills, Education, Personal Details, Contact) while an animated pixel-art character runs along the page, turning a traditional resume into a playable experience.',
     stack: ['HTML', 'CSS', 'JavaScript'],
     image: '/projects/SS-port.png',
     imageAlt: 'A screenshot of my project homepage',
     liveUrl: 'https://aryanmauryahere.github.io/Portfolio_website/',
     githubUrl: 'https://github.com/AryanMauryahere/Portfolio_website',
+  },
+  {
+    title: 'GocSync',
+    description: 'An interoperability government project that allows users to sync their data across multiple platforms. Built with React and Node.js, it connects different systems and enables seamless data exchange, through APIs.',
+    stack: ['TypeScript', 'Tailwind CSS', 'vite',  'React', 'Node.js', 'APIs'],
+    image: '/projects/GovSync-SS.png',
+    imageAlt: 'A screenshot of my project homepage',
+    liveUrl: 'https://govsync.govsync.workers.dev/',
+    githubUrl: 'https://github.com/AryanMauryahere/GovSync',
   },
   ],
   contactMessage: 'Interested in web development, cybersecurity or learning together? Find me on LinkedIn, or explore my GitHub profile below.',
