@@ -44,11 +44,12 @@ export const portfolio = {
     liveUrl: 'https://aryanmauryahere.github.io/Portfolio_website/',
     githubUrl: 'https://github.com/AryanMauryahere/Portfolio_website',
   },
+  
   {
     title: 'GocSync',
     description: 'An interoperability government project that allows users to sync their data across multiple platforms. Built with React and Node.js, it connects different systems and enables seamless data exchange, through APIs.',
     stack: ['TypeScript', 'Tailwind CSS', 'vite',  'React', 'Node.js', 'APIs'],
-    image: '/projects/GovSync-SS.png',
+    image: '/projects/Govsync-ss.png',
     imageAlt: 'A screenshot of my project homepage',
     liveUrl: 'https://govsync.govsync.workers.dev/',
     githubUrl: 'https://github.com/AryanMauryahere/GovSync',
