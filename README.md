@@ -2,7 +2,7 @@
 
 A personal portfolio built with the original **KageLandingPage** from **ThreeUI 1.2.0**, React and Vite. It keeps the authored temple world, red moon, fog, leaves, foreground artwork, card effects, scroll camera and responsive navigation.
 
-The portfolio includes your real student details, HTML/CSS/JavaScript skills, Python learning through loops, interests in web development and cybersecurity, and your GitHub and LinkedIn links. No completed projects, email address, résumé or professional experience have been invented.
+The portfolio includes the six projects and public contact links from the interactive portfolio at https://aryanmauryahere.github.io/My-Portfolio/. Project details and links live in `src/content.js` and can be updated there as they change.
 
 ## Start locally
 
@@ -46,9 +46,9 @@ Open `src/content.js`, change the text between quotes, and save. During `npm run
 - `facts`: four short fact tiles.
 - `interests`: three labels for the original illustrative temple cards. These are interests, not completed projects.
 - `skills`: five skill/learning tiles. Keep statuses honest, such as “Build with”, “Learning” or “Interested in”.
-- `links`: your GitHub and LinkedIn URLs.
+- `links`: your GitHub, LinkedIn, email and phone contact details. Blank email or phone values keep those links hidden.
 
-Keep the facts/interests/skills arrays at 4/3/5 entries respectively unless you also update the adapter and layout. Additional project entries are supported without changing the layout.
+Keep the facts/interests/skills arrays at 4/3/5 entries respectively unless you also update the adapter and layout. Additional project entries are supported without changing the layout; an optional `status` field displays labels such as `In progress` or `Completed`.
 
 The four small hero summaries and footer skill labels are in `src/personalize-kage.js`. Update those if your skill set changes. If you change your name or introduction, also update the metadata and fallback content in `index.html`.
 

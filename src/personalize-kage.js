@@ -84,6 +84,9 @@ export function personalizeKage(p) {
         const img = document.createElement('img'); img.src = project.image;
         img.alt = project.imageAlt || project.title; img.loading = 'lazy'; article.append(img);
       }
+      if (project.status) {
+        const status = document.createElement('p'); status.className = 'eyebrow project-status'; status.textContent = project.status; article.append(status);
+      }
       const title = document.createElement('h3'); title.textContent = project.title;
       const description = document.createElement('p'); description.className = 'body'; description.textContent = project.description;
       const stack = document.createElement('p'); stack.className = 'eyebrow'; stack.textContent = (project.stack || []).join(' · ');
@@ -123,7 +126,11 @@ export function personalizeKage(p) {
   social[2].textContent = 'Back to top ↑';
   if (p.links.email) {
     const li = document.createElement('li'), a = document.createElement('a');
-    a.href = `mailto:${p.links.email}`; a.textContent = 'Email ↗'; li.append(a); cols[3].querySelector('ul').append(li);
+    a.href = `mailto:${p.links.email}?subject=Hello&body=I%20have%20a%20question`; a.textContent = 'Email ↗'; li.append(a); cols[3].querySelector('ul').append(li);
+  }
+  if (p.links.phone) {
+    const li = document.createElement('li'), a = document.createElement('a');
+    a.href = `tel:${p.links.phone}`; a.textContent = 'Phone'; li.append(a); cols[3].querySelector('ul').append(li);
   }
   if (p.links.resume) {
     const li = document.createElement('li'), a = document.createElement('a');
