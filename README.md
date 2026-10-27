@@ -6,7 +6,7 @@ The portfolio includes the six projects and public contact links from the intera
 
 ## Start locally
 
-Install Node.js 22.12 or later (Node 24 is suitable). Open a terminal in this folder:
+Install Node.js 22.12 or later (Node 24 is suitable). Open a terminal in this folder: 
 
 ```sh
 npm ci
