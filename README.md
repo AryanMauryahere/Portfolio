@@ -6,7 +6,7 @@ The portfolio includes seven projects, including a link to the interactive game 
 
 ## Start locally
 
-Install Node.js 22.12 or later (Node 24 is suitable). Open a terminal in this folder:
+Install Node.js 22.12 or later (Node 24 is suitable). Open a terminal in this folder: 
 
 ```sh
 npm ci
