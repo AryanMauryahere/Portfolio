@@ -26,7 +26,7 @@ export function personalizeKage(p) {
   });
   $('.hero-top .eyebrow').lastChild.textContent = ` ${p.studyYear} · ${p.branch}`;
   $$('.hero h1 .mask-line > span').forEach((el, i) => { el.textContent = p.headline[i] || ''; });
-  text('.hero-sub', `${p.name}. ${p.title} at ${p.college}.`);
+  text('.hero-sub', `${p.name}. ${p.heroLabel}.`);
   const chips = [
     ['Build', 'HTML, CSS and JavaScript.'],
     ['Learn', 'Python fundamentals, through loops.'],

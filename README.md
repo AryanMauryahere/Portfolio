@@ -2,7 +2,7 @@
 
 A personal portfolio built with the original **KageLandingPage** from **ThreeUI 1.2.0**, React and Vite. It keeps the authored temple world, red moon, fog, leaves, foreground artwork, card effects, scroll camera and responsive navigation.
 
-The portfolio includes the six projects and public contact links from the interactive portfolio at https://aryanmauryahere.github.io/My-Portfolio/. Project details and links live in `src/content.js` and can be updated there as they change.
+The portfolio includes seven projects, including a link to the interactive game portfolio at https://aryanmauryahere.github.io/My-Portfolio/. Project details and social links live in `src/content.js` and can be updated there as they change. Keep private details such as your college, physical address, birth date and phone number out of public portfolio content.
 
 ## Start locally
 
@@ -46,7 +46,7 @@ Open `src/content.js`, change the text between quotes, and save. During `npm run
 - `facts`: four short fact tiles.
 - `interests`: three labels for the original illustrative temple cards. These are interests, not completed projects.
 - `skills`: five skill/learning tiles. Keep statuses honest, such as “Build with”, “Learning” or “Interested in”.
-- `links`: your GitHub, LinkedIn, email and phone contact details. Blank email or phone values keep those links hidden.
+- `links`: your GitHub and LinkedIn URLs. Email is blank by default and stays hidden unless you choose to publish it.
 
 Keep the facts/interests/skills arrays at 4/3/5 entries respectively unless you also update the adapter and layout. Additional project entries are supported without changing the layout; an optional `status` field displays labels such as `In progress` or `Completed`.
 
@@ -74,9 +74,9 @@ Place the screenshot at `public/projects/my-project.webp`. You can omit `image` 
 
 Prefer compressed WebP screenshots, around 1200–1600 pixels wide. Use descriptive alternative text. Never put private credentials in a public project description or repository.
 
-## Add email or résumé
+## Optional email or résumé
 
-In `links`, fill in `email` with your real address to show an Email link. To add a résumé, place a PDF at `public/resume.pdf` and set:
+Email is blank by default and stays hidden. Add an email address to `links` only if you want it public. To add a résumé, place a PDF at `public/resume.pdf` and set:
 
 ```js
 resume: '/resume.pdf',

@@ -88,7 +88,7 @@ document.title = portfolio.name + ' — Portfolio';
 document.querySelector('meta[name="description"]').content = portfolio.about;
 portfolio.headline.forEach((line) => document.querySelector('.hero-title').append(element('span', '', line)));
 
-for (const [label, value] of [['College', portfolio.college], ['Branch', portfolio.branch], ['Year', portfolio.studyYear]]) {
+for (const [label, value] of [['Branch', portfolio.branch], ['Year', portfolio.studyYear]]) {
   const group = element('div');
   group.append(element('dt', 'micro', label), element('dd', '', value));
   document.querySelector('.education').append(group);
