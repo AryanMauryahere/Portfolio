@@ -17,8 +17,8 @@ export const portfolio = {
     { value: 'Security', label: 'An interest' },
   ],
   interests: [
-    { name: 'Web development', tag: 'BUILD', caption: 'Interfaces, interactions and the web' },
     { name: 'Cybersecurity', tag: 'EXPLORE', caption: 'Curious about how systems stay secure' },
+    { name: 'Web development', tag: 'BUILD', caption: 'Interfaces, interactions and the web' },
     { name: 'Python', tag: 'LEARN', caption: 'Building foundations, one loop at a time' },
   ],
   skillsHeading: 'The tools. The practice. The next step.',
