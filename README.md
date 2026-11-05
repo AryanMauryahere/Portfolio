@@ -56,7 +56,7 @@ The four small hero summaries and footer skill labels are in `src/personalize-ka
 
 Replace the empty `projects: []` in `src/content.js` with entries like this. Replace all example text with your own actual work; leave unavailable URLs empty.
 
-```js
+js
 projects: [
   {
     title: 'My project title',
@@ -68,7 +68,7 @@ projects: [
     githubUrl: '',
   },
 ],
-```
+
 
 Place the screenshot at `public/projects/my-project.webp`. You can omit `image` and `imageAlt` until you have a screenshot. The empty-state message is replaced automatically when projects are added. Only populated HTTP/HTTPS links are shown. The original three scene illustrations remain above your actual projects.
 
